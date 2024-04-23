@@ -18,7 +18,9 @@ class App extends Component {
   render() {
     const {activeLanguage} = this.state
     return (
-      <LanguageContext.Provider value={{activeLanguage,changeLanguage: this.changeLanguage}}>
+      <LanguageContext.Provider
+        value={{activeLanguage, changeLanguage: this.changeLanguage}}
+      >
         <Header />
         <LandingSection />
         <FeaturesSection />
